@@ -12,7 +12,7 @@ export const Ul = styled.ul`
 `;
 export const MovieItems = styled.li`
   list-style: none;
-  box-shadow: 2px 3px 2px 3px rgb(140 80 151);
+  border: solid 1px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 5px;
   &:hover {

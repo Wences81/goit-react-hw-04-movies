@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { NavigationContainer } from './Navigation.styled';
+import { NavigationContainer } from './Navigation.styled.js';
 
 const Navigation = () => {
   return (

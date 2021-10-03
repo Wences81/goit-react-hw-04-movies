@@ -49,10 +49,8 @@ export default function HomePage() {
               </Title>
             </MovieItems>
           ))}
-          ;
         </Ul>
       )}
-      ;
     </Container>
   );
 }

@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Navigation from '../Navigation/Navigation';
 import Loader from '../Loader/Loader.jsx';
-import { Container } from './App.styled';
+import { Container } from './App.styled.js';
 
 const AsyncHomePage = lazy(() =>
   import(
