@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 function LoadMoreBtnClick({ onClick }) {
   return (
     <div>

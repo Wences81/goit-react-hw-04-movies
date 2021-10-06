@@ -32,7 +32,7 @@ export default function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);
   const location = useLocation();
   const history = useHistory();
-  const locationForm = location?.state?.from?.location;
+  const locationFrom = location?.state?.from?.location;
 
   useEffect(() => {
     MovieApi.fetchMovieById(movieId)
@@ -41,13 +41,13 @@ export default function MovieDetailsPage() {
       })
       .catch(error => {
         console.log(error);
-        history.push(locationForm ?? '/movies');
+        history.push(locationFrom ?? '/movies');
         toast.error('Sorry this movie not found');
       });
-  }, [movieId, history, locationForm]);
+  }, [movieId, history, locationFrom]);
 
   const goBack = () => {
-    history.push(locationForm ?? '/');
+    history.push(locationFrom ?? '/');
   };
 
   return (

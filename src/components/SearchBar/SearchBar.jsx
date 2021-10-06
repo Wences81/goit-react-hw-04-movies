@@ -13,7 +13,7 @@ export default function SearchBar({ onSearch }) {
 
   return (
     <Container>
-      <from onSubmit={handleSearch}>
+      <form onSubmit={handleSearch}>
         <Input
           name="searchName"
           type="text"
@@ -24,7 +24,7 @@ export default function SearchBar({ onSearch }) {
         <Button type="submit">
           <span>Search</span>
         </Button>
-      </from>
+      </form>
     </Container>
   );
 }

@@ -10,7 +10,6 @@ const Navigation = () => {
         className="Navigation_link"
         activeClassName="Active_link"
       >
-        {' '}
         Home Page
       </NavLink>
 

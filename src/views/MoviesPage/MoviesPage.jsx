@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
-import * as MovieApi from '../../services/movie-api';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import toast from 'react-hot-toast';
+import * as MovieApi from '../../services/movie-api';
+
 import {
   NavLink,
   useRouteMatch,
   useHistory,
   useLocation,
 } from 'react-router-dom';
+import toast from 'react-hot-toast';
 import LoadMoreBtnClick from '../../components/LoadMoreBtn/LoadMoreBtn';
 import {
   Container,
